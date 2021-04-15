@@ -1,7 +1,11 @@
+import { Routes } from './routes/Routes'
+import { Navigation } from './components/navigation/Navigation'
+import './shared/global/Global.css'
+
 export const App = () => {
   return (
-    <div>
-      <h1>Test</h1>
-    </div>
+    <Routes>
+      <Navigation />
+    </Routes>
   )
 }
