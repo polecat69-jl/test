@@ -1,0 +1,10 @@
+.profileWrapper {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.profileImg {
+    width: 40%;
+    height: auto;
+    border-radius: 25%;
+}

@@ -1,14 +1,21 @@
 const galleryView = '/gallery'
 const homeView = '/'
 const newsView = '/news'
-const loginView = '/login'
+const signinView = '/login'
 const shopView = '/shop'
+const profileView = '/profile'
+const settingsView = '/settings'
+const savedProductsView = '/savedproducts'
 
 // eslint-disable-next-line
 export default {
     homeView,
     galleryView,
     newsView,
-    loginView,
-    shopView
+    signinView,
+    shopView,
+    profileView,
+    settingsView,
+    savedProductsView
+
 }

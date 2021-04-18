@@ -1,7 +1,7 @@
 export const HomeView = () => {
     return (
         <div>
-            <h1>This is the HomeView</h1>
+            <h1>Welcome to the Homeview</h1>
         </div>
     )
 }

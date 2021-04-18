@@ -1,9 +1,11 @@
-import React from 'react'
-
 export const GalleryView = () => {
+
+    const username = localStorage.getItem('username')
+
     return (
         <div>
-            <h1>Gallery</h1>
+            <h1>Hi and welcome {username}:)</h1>
+
         </div>
     )
 }
