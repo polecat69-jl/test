@@ -1,14 +1,17 @@
-import './ProfileDropDown.css'
-import { useHistory } from 'react-router-dom'
-import RoutingPath from '../../../routes/RoutingPath'
-import { useContext } from 'react'
-import { UserContext } from '../../../shared/provider/UserProvider'
-import logoutimg from '../../../shared/images/logout.png'
-import settingsimg from '../../../shared/images/settings.png'
-import savedproductsimg from '../../../shared/images/savedproducts.png'
-import profileimg from '../../../shared/images/userprofile.png'
+import './SideBar.css'
 
-export const ProfileDropDown = () => {
+import { useHistory } from 'react-router-dom'
+import RoutingPath from '../../../../routes/RoutingPath'
+import { useContext } from 'react'
+import { UserContext } from '../../../../shared/provider/UserProvider'
+
+import logoutimg from '../../../../shared/images/logout.png'
+import settingsimg from '../../../../shared/images/settings.png'
+import savedproductsimg from '../../../../shared/images/savedproducts.png'
+import profileimg from '../../../../shared/images/userprofile.png'
+
+export const SideBar = ({drawerisOpen, drawerHandler}) => {
+
     const [authenticatedUser, setAuthenticatedUser] = useContext(UserContext)
     const history = useHistory()
 
@@ -20,7 +23,9 @@ export const ProfileDropDown = () => {
     }
 
     return (
-        <div className='profileDropdownWrapper'>
+        <nav className={drawerisOpen ? 'side-drawer open' : 'side-drawer'}>
+            <span onClick={() => drawerHandler(false)}>Exit</span><br />
+
             <span>First Lastname</span><br />
             <span>Email</span>
             <hr />
@@ -32,6 +37,7 @@ export const ProfileDropDown = () => {
             <span onClick={() => history.push(RoutingPath.savedProductsView)}><img className="profileDropDownImages" src={savedproductsimg} alt={'error..'}/> Saved Products</span>
             <hr />
             <span onClick={() => logout()}><img className="profileDropDownImages" src={logoutimg} alt={'error..'}/> Logout</span>
-        </div>
+ 
+        </nav>
     )
 }

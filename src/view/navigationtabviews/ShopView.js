@@ -1,19 +1,31 @@
-import { useEffect, useState } from 'react'
+import PokemonAPIservice from '../../shared/api/service/PokemonAPIservice'
+import { useDebounce } from '../../hooks/useDebounce'
+import { useState, useEffect } from 'react'
 
 export const ShopView = () => {
-    const [counter, setCounter] = useState(0)
+    const [data, setData] = useState()
+    const [search, setSearch] = useState('')
+    const debounceSearchTerm = useDebounce(search, 1000)
 
-useEffect(() => {
-    alert('First render!')
-    return () => {
-        alert('last render!')
+    const fetchData = async (x) => {
+        if (debounceSearchTerm) {
+        const { data } = await PokemonAPIservice.searchCharacter(x)
+        setData(data)
+        }
     }
-}, [counter])
+
+    useEffect(() => {
+        fetchData(search)
+    }, [debounceSearchTerm])
 
     return (
         <div>
-            <h1 onClick={() => setCounter(counter + 1)}>{counter}</h1>
-            <h1>This is the shopview</h1>
+        <input placeholder=' search 4 pokemons' onChange={event => setSearch(event.target.value)} />
+        <h1>Name: {data?.name}</h1>
+        <h1>id: {data?.id}</h1>
+        <h1>height {data?.height}"</h1>
+        <h1>weight {data?.weight}lb</h1>
+        <h1>type {data?.types?.[0]?.type?.name}</h1>
         </div>
     )
 }

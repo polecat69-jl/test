@@ -6,9 +6,11 @@
 
 .navlogo {
     grid-column: 1/3;
-    width: 80%;
+    width: 55%;
     height: auto;
     cursor: pointer;
+    padding: 5px;
+    border-radius: 20%;
 }
 
 .shopButton,
