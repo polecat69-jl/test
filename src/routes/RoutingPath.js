@@ -6,6 +6,7 @@ const shopView = '/shop'
 const profileView = '/profile'
 const settingsView = '/settings'
 const savedProductsView = '/savedproducts'
+const itemDetailView = '/itemdetail'
 
 // eslint-disable-next-line
 export default {
@@ -16,6 +17,6 @@ export default {
     shopView,
     profileView,
     settingsView,
-    savedProductsView
-
+    savedProductsView,
+    itemDetailView
 }

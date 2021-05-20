@@ -9,6 +9,7 @@ import { ShopView } from '../view/navigationtabviews/ShopView'
 import { SettingsView } from '../view/profiledropdownviews/SettingsView'
 import { ProfileView } from '../view/profiledropdownviews/ProfileView'
 import { SaveProductsView } from '../view/profiledropdownviews/SaveProductsView'
+import { ItemDetail } from '../view/profiledropdownviews/ItemDetail'
 import RoutingPath from './RoutingPath'
 
 
@@ -41,7 +42,8 @@ export const Routes = ({children}) => {
         {children}
             <Switch>
                 <Route exact path={RoutingPath.galleryView} component={GalleryView} />
-                <Route exact path={RoutingPath.newsView} component={NewsView} />
+                <Route exact path={RoutingPath.newsView} component={NewsView} />                
+                <Route exact path={RoutingPath.itemDetailView} component={ItemDetail} />
                 <Route exact path={RoutingPath.shopView} component={ShopView} />                
                 <Route exact path={RoutingPath.signinView} component={blockRouteIfAuthenticated(SignInView)} />                                
                 <Route exact path={RoutingPath.settingsView} component={authenticatedRequired(SettingsView)} />

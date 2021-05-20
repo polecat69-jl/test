@@ -5,6 +5,11 @@ const searchCharacter = (pokemonName) => {
     return http.get(`/pokemon/${pokemonName}`)
 }
 
+const get100Pokemons = () => {
+    return http.get('pokemon?limit=100')
+}
+
 export default {
-    searchCharacter
+    searchCharacter,
+    get100Pokemons
 }
