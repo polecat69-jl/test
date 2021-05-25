@@ -1,6 +1,6 @@
 import Axios from 'axios'
 
-const productionAPI = ''
+const productionAPI = 'https://'
 const developmentAPI = 'http://localhost:3001'
 
 const E_COMMERCE_API = Axios.create({

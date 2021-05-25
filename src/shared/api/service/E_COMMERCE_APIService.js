@@ -20,8 +20,8 @@ const getUserByID = () => {
     return http.get('/user')
 }
 
-const createUser = () => {
-    return http.post('/user')
+const createUser = (userdata) => {
+    return http.post('/user', userdata)
 }
 
 export default {
