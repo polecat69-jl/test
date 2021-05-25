@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/polecat69-jl/javascriptfullstack/static/css/main.41d1f211.chunk.css",
-    "main.js": "/polecat69-jl/javascriptfullstack/static/js/main.bea861aa.chunk.js",
-    "main.js.map": "/polecat69-jl/javascriptfullstack/static/js/main.bea861aa.chunk.js.map",
-    "runtime-main.js": "/polecat69-jl/javascriptfullstack/static/js/runtime-main.a62ac508.js",
-    "runtime-main.js.map": "/polecat69-jl/javascriptfullstack/static/js/runtime-main.a62ac508.js.map",
-    "static/js/2.0e16d55d.chunk.js": "/polecat69-jl/javascriptfullstack/static/js/2.0e16d55d.chunk.js",
-    "static/js/2.0e16d55d.chunk.js.map": "/polecat69-jl/javascriptfullstack/static/js/2.0e16d55d.chunk.js.map",
-    "static/js/3.ac223833.chunk.js": "/polecat69-jl/javascriptfullstack/static/js/3.ac223833.chunk.js",
-    "static/js/3.ac223833.chunk.js.map": "/polecat69-jl/javascriptfullstack/static/js/3.ac223833.chunk.js.map",
-    "index.html": "/polecat69-jl/javascriptfullstack/index.html",
-    "static/css/main.41d1f211.chunk.css.map": "/polecat69-jl/javascriptfullstack/static/css/main.41d1f211.chunk.css.map",
-    "static/js/2.0e16d55d.chunk.js.LICENSE.txt": "/polecat69-jl/javascriptfullstack/static/js/2.0e16d55d.chunk.js.LICENSE.txt",
-    "static/media/logotype.38f29b1e.png": "/polecat69-jl/javascriptfullstack/static/media/logotype.38f29b1e.png",
-    "static/media/pokeball.e834de00.gif": "/polecat69-jl/javascriptfullstack/static/media/pokeball.e834de00.gif"
+    "main.css": "/test/static/css/main.41d1f211.chunk.css",
+    "main.js": "/test/static/js/main.bea861aa.chunk.js",
+    "main.js.map": "/test/static/js/main.bea861aa.chunk.js.map",
+    "runtime-main.js": "/test/static/js/runtime-main.1633145c.js",
+    "runtime-main.js.map": "/test/static/js/runtime-main.1633145c.js.map",
+    "static/js/2.0e16d55d.chunk.js": "/test/static/js/2.0e16d55d.chunk.js",
+    "static/js/2.0e16d55d.chunk.js.map": "/test/static/js/2.0e16d55d.chunk.js.map",
+    "static/js/3.ac223833.chunk.js": "/test/static/js/3.ac223833.chunk.js",
+    "static/js/3.ac223833.chunk.js.map": "/test/static/js/3.ac223833.chunk.js.map",
+    "index.html": "/test/index.html",
+    "static/css/main.41d1f211.chunk.css.map": "/test/static/css/main.41d1f211.chunk.css.map",
+    "static/js/2.0e16d55d.chunk.js.LICENSE.txt": "/test/static/js/2.0e16d55d.chunk.js.LICENSE.txt",
+    "static/media/logotype.38f29b1e.png": "/test/static/media/logotype.38f29b1e.png",
+    "static/media/pokeball.e834de00.gif": "/test/static/media/pokeball.e834de00.gif"
   },
   "entrypoints": [
-    "static/js/runtime-main.a62ac508.js",
+    "static/js/runtime-main.1633145c.js",
     "static/js/2.0e16d55d.chunk.js",
     "static/css/main.41d1f211.chunk.css",
     "static/js/main.bea861aa.chunk.js"
